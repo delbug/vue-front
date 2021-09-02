@@ -23,7 +23,6 @@ export default {
   mounted() {
     axios.get("http://localhost:3000/api/users").then((res) => {
       console.log("res", res);
-
       this.users = res.data;
     });
   },
@@ -31,8 +30,19 @@ export default {
 </script>
 
 <style>
+#app {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
   border: 1px solid skyblue;
+  padding: 20px;
+  text-align: left;
 }
 </style>
