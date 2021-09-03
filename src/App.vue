@@ -21,7 +21,10 @@ export default {
     };
   },
   mounted() {
-    axios.get("http://120.26.81.60:3000/api/users").then((res) => {
+    // let url = "http://120.26.81.60:3000/api/users";
+    let url = "/api/users";
+
+    axios.get(url).then((res) => {
       console.log("res", res);
       this.users = res.data;
     });
