@@ -3,8 +3,8 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <ul>
       <li v-for="(item, i) in users" :key="i">
-        <div>名字{{ item.name }}</div>
-        <div>邮箱{{ item.email }}</div>
+        <div>名字：{{ item.name }}</div>
+        <div>邮箱：{{ item.email }}</div>
       </li>
     </ul>
   </div>
