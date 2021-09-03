@@ -47,5 +47,6 @@ li {
   border: 1px solid skyblue;
   padding: 20px;
   text-align: left;
+  background-color: #ccc;
 }
 </style>
